@@ -1,26 +1,19 @@
 {
-  "name": "sudhanshu-git",
+  "name": "thomyorke",
   "version": "1.0.0",
-  "description": "Nice Dream",
+  "description": "nice dream",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrandCodeZ/sudhanshu.git"
-  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrandCodeZ/sudhanshu/issues"
-  },
-  "homepage": "https://github.com/BrandCodeZ/sudhanshu#readme",
   "dependencies": {
-    "jsonfile": "^6.2.1",
+    "jsonfile": "^6.1.0",
     "moment": "^2.30.1",
-    "simple-git": "^3.36.0"
-  },
-  "keywords": []
+    "random": "^4.1.0",
+    "simple-git": "^3.25.0"
+  }
 }
