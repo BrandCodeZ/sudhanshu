@@ -22,6 +22,19 @@ const markCommit = (x, y) => {
   });
 };
 
+const markToday = () => {
+  const date = moment().format();
+
+  const data = {
+    date: date,
+  };
+
+  console.log(date);
+  jsonfile.writeFile(path, data, () => {
+    simpleGit().add([path]).commit(date, { "--date": date }).push();
+  });
+};
+
 const makeCommits = (n) => {
   if(n===0) return simpleGit().push();
   const x = random.int(0, 54);
@@ -37,4 +50,4 @@ const makeCommits = (n) => {
   });
 };
 
-makeCommits(100);
+markToday();
